@@ -29,11 +29,10 @@
           $("#skills").text(data.data.attributes.skills);
           // Complete consuming the API data and updating the work and contact sections
           // HINT: look at the above lines, jquery documentation, see what is the object returned
-       $.ajax({url: "something.txt", async: false, success: function(result) {
-         $("work").html("no work here!");
-       }});
+       //$.ajax({url: "something.txt", async: false, success: function(result) {
+          $("#work").text(data.data.attributes.work);
+          $("#contacts").text(data.data.attributes.contacts);
      
-
      });
   });
   </script>
